@@ -91,7 +91,7 @@ export function OrderPage() {
     }
 
     if (file.size > config.maxFileSize) {
-      setUploadError('File size must be less than 2MB');
+      setUploadError('File size must be less than 5MB');
       return;
     }
 

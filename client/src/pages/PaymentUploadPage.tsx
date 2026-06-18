@@ -50,8 +50,8 @@ export function PaymentUploadPage() {
     if (!file) {
       setFileError('Please upload your payment screenshot');
       valid = false;
-    } else if (file.size > 2 * 1024 * 1024) {
-      setFileError('File must be under 2MB');
+    } else if (file.size > 5 * 1024 * 1024) {
+      setFileError('File must be under 5MB');
       valid = false;
     }
     if (txLast6.length > 0 && txLast6.length !== 6) {
@@ -116,7 +116,7 @@ export function PaymentUploadPage() {
                   KBZpay receipt ပိုရန်
                 </p>
                 <p className="text-sm text-gray-400 mt-1">
-                  JPEG, PNG, WebP &middot; Max 2MB
+                  JPEG, PNG, WebP &middot; Max 5MB
                 </p>
               </div>
               <input

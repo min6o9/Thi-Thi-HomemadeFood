@@ -51,8 +51,8 @@ export function MultiImageUpload({
         if (fileInputRef.current) fileInputRef.current.value = '';
         return;
       }
-      if (file.size > 2 * 1024 * 1024) {
-        setUploadError('Each image must be under 2 MB');
+      if (file.size > 5 * 1024 * 1024) {
+        setUploadError('Each image must be under 5 MB');
         setUploadingCount(0);
         if (fileInputRef.current) fileInputRef.current.value = '';
         return;

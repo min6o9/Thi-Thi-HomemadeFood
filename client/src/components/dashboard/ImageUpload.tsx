@@ -58,9 +58,9 @@ export function ImageUpload({ value, onChange, error }: ImageUploadProps) {
       return;
     }
 
-    // Validate file size (max 2MB — matches server limit)
-    if (file.size > 2 * 1024 * 1024) {
-      setUploadError('Image size must be less than 2MB');
+    // Validate file size (max 5MB — matches server limit)
+    if (file.size > 5 * 1024 * 1024) {
+      setUploadError('Image size must be less than 5MB');
       setUploadState('error');
       return;
     }
@@ -163,7 +163,7 @@ export function ImageUpload({ value, onChange, error }: ImageUploadProps) {
                     Drop image here or click to upload
                   </p>
                   <p className="text-body-sm text-gray-500 dark:text-gray-400 mt-1">
-                    PNG, JPG, GIF up to 2MB
+                    PNG, JPG, GIF up to 5MB
                   </p>
                 </div>
                 <button

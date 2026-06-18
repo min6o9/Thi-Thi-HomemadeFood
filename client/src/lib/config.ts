@@ -20,8 +20,8 @@ export const config = {
   /** Whether development tools are enabled */
   enableDevTools: import.meta.env.VITE_ENABLE_DEV_TOOLS === 'true',
 
-  /** Maximum file upload size in bytes (2MB) */
-  maxFileSize: 2 * 1024 * 1024,
+  /** Maximum file upload size in bytes (5MB) */
+  maxFileSize: 5 * 1024 * 1024,
 
   /** Allowed image MIME types */
   allowedImageTypes: ['image/jpeg', 'image/png', 'image/gif', 'image/webp'],

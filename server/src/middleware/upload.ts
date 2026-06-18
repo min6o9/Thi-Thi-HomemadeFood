@@ -19,7 +19,7 @@ const fileFilter = (req: any, file: Express.Multer.File, cb: multer.FileFilterCa
 export const uploadImage = multer({
   storage,
   limits: {
-    fileSize: 2 * 1024 * 1024, // 2MB limit (reduced for better security)
+    fileSize: 5 * 1024 * 1024, // 5MB limit
     files: 1 // Only allow 1 file at a time
   },
   fileFilter
